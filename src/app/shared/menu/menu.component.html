@@ -1,0 +1,26 @@
+<div>
+  <ul>
+    <!--
+      Importante: o routerLink é utilizado no lugar do href padrão
+      para que a página não seja recarregada a todo momento.
+      E tenha o comportamento de uma SPA, que renderiza a página
+      apenas uma vez, e carrega os dados nessa página dinamicamente.
+    -->
+    <li>
+      <a
+      [routerLink]="['/']"
+      [routerLinkActive]="['activated']"
+      [routerLinkActiveOptions]="{exact :true}"
+      >
+      Home
+    </a>
+    </li>
+    <li>
+      <a
+      [routerLink]="['/portfolio']"
+      [routerLinkActive]="['activated']"
+      [routerLinkActiveOptions]="{exact :false}"
+      >
+      Portfólio</a></li>
+  </ul>
+</div>
